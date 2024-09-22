@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @RestController
-public class WelcomeController {
-    @GetMapping()
-    public String getMethodName() {
-        return "Welcome to spring boot";
+public class ContactController {
+    @GetMapping("/contact")
+    public String getContactDetails() {
+        return "Contact Details";
     }
-    
 }
